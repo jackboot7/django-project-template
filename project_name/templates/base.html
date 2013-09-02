@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{% block window_title %}Canales de twitter {% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!--link rel="stylesheet/less" href="less/bootstrap.less" type="text/css" /-->
+    <!--link rel="stylesheet/less" href="less/responsive.less" type="text/css" /-->
+    <!--script src="js/less-1.3.3.min.js"></script-->
+    <!--append ‘#!watch’ to the browser URL, then refresh the page. -->
+
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ STATIC_URL }}img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ STATIC_URL }}img/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ STATIC_URL }}img/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="{{ STATIC_URL }}img/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico">
+
+    <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/scripts.js"></script>
+</head>
+
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12">
+            <div class="page-header">
+                <h1>
+                    {% block page_title %}<a href="/">Twitter Channels</a>{% endblock %} <small>{% block page_subtitle %}Sistema de filtrado automático{% endblock %}</small>
+                </h1>
+            </div>
+            <div class="alert alert-success" id="alert_success" style="display: none">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4>
+                    <span id="alert_success_title"></span>
+                </h4><span id="alert_success_body"></span>
+            </div>
+            <div class="alert alert-warning" id="alert_warning" style="display: none">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <h4>
+                    <span id="alert_warning_title"></span>
+                </h4><span id="alert_warning_body"></span>
+            </div>
+            <ul class="nav nav-tabs">
+                {% block nav_bar %}
+                <li id="nav_tab_home" class="active">
+                    <a href="#">Home</a>
+                </li>
+
+
+                <li class="disabled" id="nav_tab_config">
+                    <a href="#">Configuración</a>
+                </li><!--
+				<li class="disabled">
+					<a href="#">Messages</a>
+				</li>
+				-->
+                {% endblock %} <!-- endblock nav_bar -->
+
+            </ul>
+            <div class="row-fluid">
+                <div class="span8">
+                    <h3>
+                        {% block section_title %}
+                        Dashboard
+                        {% endblock %}
+                    </h3>
+                    {% block section_body %}
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>
+                                #
+                            </th>
+                            <th>
+                                Usuario
+                            </th>
+                            <th>
+                                Texto
+                            </th>
+                            <th>
+                                Fecha
+                            </th>
+                            <th>
+                                Status
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="warning">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                @TweetMaster5555
+                            </td>
+                            <td>
+                                Esto es una prueba lalalala...
+                            </td>
+                            <td>
+                                01/04/2012
+                            </td>
+                            <td>
+                                Pending
+                            </td>
+                        </tr>
+                        <tr class="success">
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                @jackboot7
+                            </td>
+                            <td>
+                                Tráfico fuerte en la libertador
+                            </td>
+                            <td>
+                                01/04/2012
+                            </td>
+                            <td>
+                                Approved
+                            </td>
+                        </tr>
+                        <tr class="error">
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                @trollFace
+                            </td>
+                            <td>
+                                Muera chávez no joda!!!
+                            </td>
+                            <td>
+                                02/04/2012
+                            </td>
+                            <td>
+                                Declined
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    {% endblock %}  <!-- endblock section_body -->
+                </div>
+                <div class="span4">
+                    {% block right_column %}
+                    <span class="label">Notificaciones</span>
+                    <br><br>
+                    <ul>
+                        <li>
+                            01/07/13 17:53:00 El usuario @trollFace fue bloqueado por "uso de palabras inadecuadas"
+                        </li>
+                        <li>
+                            01/07/13 18:00:04 El temporizador de tweets entró en condición: <span style="color: orange;">Naranja</span>
+                        </li>
+                        <li>
+                            01/07/13 18:15:18 El temporizador de tweets volvió a su condición normal.
+                        </li>
+                    </ul>
+
+                    <a style="float:right" href="#" class="btn btn-small btn-primary" type="button">Ver historial</a>
+                    {% endblock %} <!-- endblock right_column -->
+                </div>
+            </div>
+            <!-- MODAL DIALOG -->
+            <!--
+			<a id="modal-206857" href="#modal-container-206857" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+			-->
+            <div id="modal-container-206857" class="modal hide fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h3 id="myModalLabel">
+                        {% block modal_header %}Modal header{% endblock %}
+                    </h3>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        {% block modal_body %}
+                        One fine body…
+                        {% endblock %}
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-dismiss="modal" aria-hidden="true">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block page_scripts %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,27 @@
+"""
+Example settings for local development.
+This file should not be checked into your VCS.
+
+"""
+from {{ project_name }}.settings.base import * # pylint: disable=W0614,W0401
+
+DEBUG = True
+TEMPLATE_DEBUG = DEBUG
+
+ADMIN_MEDIA_PREFIX = '/static/admin/'
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(VAR_ROOT, 'dev.db'),
+    },
+}
+
+INSTALLED_APPS += (
+    'django.contrib.admin',
+    'django.contrib.admindocs',
+)
+
+
+# ROOT_URLCONF = '{{ project_name }}.urls.local'
+# WSGI_APPLICATION = '{{ project_name }}.wsgi.local.application'
