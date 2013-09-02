@@ -4,9 +4,8 @@
 env/
 temp/
 var/
-rentaluga/conf/local/settings.py
-rentaluga/conf/local/__init__.py
 .directory
+local.py
 *~
 .hg
 .hgignore
