@@ -33,18 +33,14 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-SECRET_KEY = 'wa%lk=$k#!-td3clxtb10+m)ul%4@gl5y8-7_^m-w92p1f4s%p'  # {{ secret_key }}
+SECRET_KEY = '{{ secret_key }}'
 #=============================================================================
 # Calculation of directories relative to the project module.
 #=============================================================================
 
-import project_name as project_module
+import {{ project_name }} as project_module
 
 PROJECT_DIR = os.path.dirname(os.path.realpath(project_module.__file__))
-
-print PROJECT_DIR
-
-
 
 
 TEMP_DIR = os.path.split(os.path.dirname(os.path.realpath(__file__)))[0]
@@ -58,7 +54,7 @@ if not os.path.exists(VAR_ROOT):
 #=============================================================================
 # Project URLS and media settings.
 #=============================================================================
-ROOT_URLCONF = 'project_name.urls'  # {{ project_name }}
+ROOT_URLCONF = '{{ project_name }}.urls'  # {{ project_name }}
 
 LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
@@ -147,14 +143,12 @@ INSTALLED_APPS = (
 # South settings
 #=============================================================================
 
-
-
 #=============================================================================
 # Miscellaneous project settings.
 #=============================================================================
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'project_name.wsgi.application'  # {{ project_name }}
+WSGI_APPLICATION = '{{ project_name }}.wsgi.application'
 
 LOGGING = {
     'version': 1,
