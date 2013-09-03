@@ -1,0 +1,15 @@
+Django==1.5
+distribute
+PIL
+South
+Unidecode
+argparse
+django-braces
+django-crispy-forms
+django-javascript-settings
+django-profiletools
+django-secure
+django-uuslug
+python-slugify
+sorl-thumbnail
+wsgiref
