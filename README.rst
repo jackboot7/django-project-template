@@ -4,6 +4,13 @@ django-project-template
 Simple Django 1.5 Base Template.
 
 
+Features:
+++++++++++
+
+- Requirement file with basic applications.
+- Twitter Bootstrap ready templates.
+
+
 How to use this template to create your project:
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
