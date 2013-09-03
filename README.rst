@@ -12,6 +12,11 @@ How to use this template to create your project:
 - $ django-admin.py startproject --template https://github.com/jackboot7/django-project-template/zipball/master --extension py,rst projectname
 
 
+To do:
+++++++++
+
+- Add fabric file for deployment.
+- Review the requirements file.
 
 
 
