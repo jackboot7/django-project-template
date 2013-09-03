@@ -122,9 +122,9 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
 
     # Third party applications/modules
-    # 'south',
-    # 'braces',
-    # 'crispy_forms',
+    'south',
+    'braces',
+    'crispy_forms',
 
     # Project applications/modules
     # {{ project_name }}.apps.<module_name>
