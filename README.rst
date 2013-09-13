@@ -7,8 +7,13 @@ Simple Django 1.5 Base Template.
 Features:
 ++++++++++
 
+
 - Requirement file with basic applications.
+
+Templates
+----------------------------
 - Twitter Bootstrap ready templates.
+- Django Registration templates (login, logout, register, etc)
 
 
 How to use this template to create your project:
