@@ -22,7 +22,7 @@ How to use this template to create your project:
 - Create your working environment and virtualenv.
 - Activate your virtualenv and install django in it.::
 
-    $ . venv/bin/activate
+    $ . env/bin/activate
     $ pip install django
 
 - Use Django Admin to generate a new project::
