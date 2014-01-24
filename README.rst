@@ -1,7 +1,7 @@
 django-project-template
 =======================
 
-Simple Django 1.5 Base Template.
+Simple Django 1.6 Base Template.
 Please, use the issue tracker to inform of issues or suggest changes. Pull Request are welcome.
 
 Features:
