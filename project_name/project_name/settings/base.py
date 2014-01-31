@@ -127,7 +127,7 @@ INSTALLED_APPS = (
     'crispy_forms',
 
     # Project applications/modules
-    # {{ project_name }}.apps.<module_name>
+    # 'apps.<module_name>',
 
 )
 #=============================================================================
