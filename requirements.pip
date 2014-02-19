@@ -1,6 +1,6 @@
 Django==1.6
 distribute
-PIL
+Pillow
 South
 Unidecode
 argparse
