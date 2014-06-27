@@ -1,8 +1,12 @@
-"""
-Example settings for local development.
-This file should not be checked into your VCS.
+# -*- coding:utf-8 -*-
 
 """
+Example settings for local development.
+
+Rename this file to: local.py; this file should not be checked into your VCS.
+
+"""
+
 from {{ project_name }}.settings.base import * # pylint: disable=W0614,W0401
 
 DEBUG = True
@@ -21,6 +25,41 @@ INSTALLED_APPS += (
     'django.contrib.admin',
     'django.contrib.admindocs',
 )
+
+#=================================================================
+# If you're using django-debug-toolbar uncomment the next section.
+# https://pypi.python.org/pypi/django-debug-toolbar
+# http://django-debug-toolbar.readthedocs.org/
+#=================================================================
+#
+# INSTALLED_APPS += ('debug_toolbar')
+# MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
+# INTERNAL_IPS = ('127.0.0.1')
+
+#===============================================================================
+# If you're using django-snippetscream for profiling uncomment the next section.
+# https://pypi.python.org/pypi/django-snippetscream
+#===============================================================================
+#
+# INSTALLED_APPS += ('snippetscream')
+# MIDDLEWARE_CLASSES += ('snippetscream.ProfileMiddleware',)
+
+#===============================================================================
+# If you're using django-debug-toolbar-template-timings uncomment the next section.
+# https://pypi.python.org/pypi/django-debug-toolbar-template-timings
+#===============================================================================
+#
+# INSTALLED_APPS += ('template_timings_panel')
+# DEBUG_TOOLBAR_PANELS += ['template_timings_panel.panels.TemplateTimings.TemplateTimings',]
+
+#===============================================================================
+# If you're using django-silk for profiling uncomment the next section. And follow
+# the documentation to edit your URLs file.
+# https://pypi.python.org/pypi/django-silk
+#===============================================================================
+#
+# INSTALLED_APPS += ('silk')
+# MIDDLEWARE_CLASSES += ('silk.middleware.SilkyMiddleware',)
 
 
 # ROOT_URLCONF = '{{ project_name }}.urls.local'
