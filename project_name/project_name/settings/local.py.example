@@ -26,6 +26,13 @@ INSTALLED_APPS += (
     'django.contrib.admindocs',
 )
 
+
+#=================================================================
+# If you're using django-extensions uncomment the next section.
+# https://pypi.python.org/pypi/django-extensions/
+#=================================================================
+# INSTALLED_APPS += ('django_extensions',)
+
 #=================================================================
 # If you're using django-debug-toolbar uncomment the next section.
 # https://pypi.python.org/pypi/django-debug-toolbar
