@@ -33,6 +33,12 @@ How to use this template to create your project:
     
     $ pip install -r requirements.pip
 
+- The project includes some applications for development, you can install them with:::
+    
+    $ pip install -r dev.requirements.pip
+
+
+- You have to rename and edit **settings/local.py.example**.
 
 
 To do:
