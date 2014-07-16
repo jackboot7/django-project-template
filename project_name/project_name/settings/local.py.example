@@ -30,13 +30,14 @@ INSTALLED_APPS += (
 #=================================================================
 # If you're using django-extensions uncomment the next section.
 # https://pypi.python.org/pypi/django-extensions/
+# Docs: http://django-extensions.readthedocs.org/en/latest/
 #=================================================================
 # INSTALLED_APPS += ('django_extensions',)
 
 #=================================================================
 # If you're using django-debug-toolbar uncomment the next section.
 # https://pypi.python.org/pypi/django-debug-toolbar
-# http://django-debug-toolbar.readthedocs.org/
+# Docs: http://django-debug-toolbar.readthedocs.org/
 #=================================================================
 #
 # INSTALLED_APPS += ('debug_toolbar')
@@ -63,6 +64,7 @@ INSTALLED_APPS += (
 # If you're using django-silk for profiling uncomment the next section. And follow
 # the documentation to edit your URLs file.
 # https://pypi.python.org/pypi/django-silk
+# Docs: https://github.com/mtford90/silk/blob/master/README.md
 #===============================================================================
 #
 # INSTALLED_APPS += ('silk')
