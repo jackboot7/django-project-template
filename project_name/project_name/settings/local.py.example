@@ -39,7 +39,7 @@ INSTALLED_APPS += (
 # http://django-debug-toolbar.readthedocs.org/
 #=================================================================
 #
-# INSTALLED_APPS += ('debug_toolbar')
+# INSTALLED_APPS += ('debug_toolbar',)
 # MIDDLEWARE_CLASSES += ('debug_toolbar.middleware.DebugToolbarMiddleware',)
 # INTERNAL_IPS = ('127.0.0.1')
 
@@ -48,7 +48,7 @@ INSTALLED_APPS += (
 # https://pypi.python.org/pypi/django-snippetscream
 #===============================================================================
 #
-# INSTALLED_APPS += ('snippetscream')
+# INSTALLED_APPS += ('snippetscream',)
 # MIDDLEWARE_CLASSES += ('snippetscream.ProfileMiddleware',)
 
 #===============================================================================
@@ -56,7 +56,7 @@ INSTALLED_APPS += (
 # https://pypi.python.org/pypi/django-debug-toolbar-template-timings
 #===============================================================================
 #
-# INSTALLED_APPS += ('template_timings_panel')
+# INSTALLED_APPS += ('template_timings_panel',)
 # DEBUG_TOOLBAR_PANELS += ['template_timings_panel.panels.TemplateTimings.TemplateTimings',]
 
 #===============================================================================
@@ -65,7 +65,7 @@ INSTALLED_APPS += (
 # https://pypi.python.org/pypi/django-silk
 #===============================================================================
 #
-# INSTALLED_APPS += ('silk')
+# INSTALLED_APPS += ('silk',)
 # MIDDLEWARE_CLASSES += ('silk.middleware.SilkyMiddleware',)
 
 
